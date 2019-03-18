@@ -186,4 +186,166 @@ header {
 .customers {
     background: #151f20;
 }
+
 /*customers ends*/
+/*pricing*/
+.card-1,
+.card-2,
+.card-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../images/pricing-card-bg.jpeg') no-repeat center center /cover;
+    box-shadow: 7px 18px 50px #555;
+    max-width: 400px;
+
+}
+
+.card-list-item {
+    border-bottom: 1px groove #eee;
+    width: 55%;
+    margin: auto;
+}
+
+.price-card-button {
+    background: #f5593d;
+    width: 130px;
+    border-radius: 25px;
+    box-shadow: 5px 8px 18px #000;
+    transition: all 0.2s;
+}
+
+.price-card-button:hover {
+    background: #f9793d;
+    transform: translateY(-2px);
+}
+
+.moveFromLeft {
+    animation-name: moveFromLeft;
+    animation-duration: 2s;
+}
+
+.moveFromRight {
+    animation-name: moveFromRight;
+    animation-duration: 2s;
+}
+
+.moveFromBottom {
+    animation-name: moveFromBottom;
+    animation-duration: 2s;
+}
+
+@keyframes moveFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveFromBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*pricing ends*/
+
+/*contacts*/
+.contact {
+    background: linear-gradient(105deg,
+        rgba(21, 31, 32, 1) 0%,
+        rgba(21, 31, 32, .95) 50%, transparent 50%),
+        url("../images/form-img.jpeg") center center no-repeat /cover;
+
+}
+
+.input {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+}
+
+.input:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #f5593d;
+}
+
+.submit-button {
+    background: #f5593d;
+    color: #eee;
+    trasition: all .3s;
+}
+
+.submit-button:hover {
+    background: #f9793d;
+    transform: translateY(-3px);
+}
+
+.label {
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.input:placeholder-shown+.label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 992px) {
+
+    .contact {
+        background: linear-gradient(rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
+    }
+
+    .contact-form {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*contacts ends*/
+
+/*footer*/
+.footer-link {
+    color: #eee;
+    font-size: 13px;
+    transition: all .3s;
+
+}
+
+.footer-link:hover {
+    color: #70aed2;
+    text-decoration: none;
+}
+
+/*end of footer*/
